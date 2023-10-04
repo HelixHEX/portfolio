@@ -1,9 +1,5 @@
 import { HStack, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export const navItems = [
   {

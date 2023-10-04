@@ -208,6 +208,7 @@ export default function Home() {
         <Suspense fallback={null}>
           <Projects section={section} mouseAction={setSection} />
         </Suspense>
+        
       </Flex>
     </>
   );

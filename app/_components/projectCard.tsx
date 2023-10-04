@@ -10,6 +10,8 @@ import {
 import { useEffect, useState } from "react";
 import NextLink from "next/link";
 import { useParams } from "next/navigation";
+const Fade = require('react-reveal/Fade')
+
 interface IProps {
   project: Project;
   index: number;
@@ -34,6 +36,7 @@ const ProjectCard: React.FC<IProps> = ({
       w='100%'
      
     >
+      <Fade bottom>
       <HStack
         className="link"
         onMouseEnter={() => setHover(true)}
@@ -67,6 +70,7 @@ const ProjectCard: React.FC<IProps> = ({
           <Text textDecorationLine={'blink'} alignSelf={"start"}>{description}</Text>
         </VStack>
       </HStack>
+      </Fade>
     </Link>
   );
 };
