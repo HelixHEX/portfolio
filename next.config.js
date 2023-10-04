@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'download.mc-quadrat.com'
+    }]
+  }
+}
 
 module.exports = nextConfig
